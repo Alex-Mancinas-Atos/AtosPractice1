@@ -1,0 +1,319 @@
+header {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  background-color: #191c1b;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  color: white;
+}
+header .big-nav {
+  display: flex;
+  margin: auto;
+}
+header .big-nav ul {
+  font-size: 1.1em;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header .big-nav ul a {
+  margin: auto 2rem;
+  text-decoration: none;
+  color: white;
+}
+header .big-nav ul a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  header .big-nav ul a {
+    margin: auto 0.5rem;
+  }
+}
+@media (max-width: 750px) {
+  header .big-nav ul a {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 750px) {
+  header .big-nav ul {
+    flex-direction: column;
+  }
+}
+header .button-login {
+  display: flex;
+  margin: auto 0.5rem;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  height: 2rem;
+  width: 10rem;
+  background-color: #4b63bb;
+  border-radius: 1rem;
+}
+header .button-login:hover {
+  border: 2px solid #4b63bb;
+  background: #3049a3;
+}
+header .button-login:active {
+  border: 2px solid #4b63bb;
+  background: #3049a3;
+  box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+}
+@media (max-width: 1000px) {
+  header .button-login {
+    width: 9rem;
+  }
+}
+@media (max-width: 1022px) {
+  header {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+}
+@media (max-width: 750px) {
+  header {
+    grid-template-columns: 1fr;
+    height: 40vh;
+  }
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background: linear-gradient(#191c1b, rgba(25, 28, 27, 0.3)), url("../../img/Bg-image.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  padding-left: 5rem;
+}
+.principal h1 {
+  font-family: "Edu TAS Beginner", cursive;
+  margin-top: 5rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.principal p {
+  font-family: "Edu TAS Beginner", cursive;
+  margin-bottom: 5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.principal .principal-button {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  height: 2em;
+  width: 15rem;
+  background-color: #4b63bb;
+  border-radius: 3rem;
+  font-size: 2rem;
+}
+.principal .principal-button:hover {
+  border: 2px solid #4b63bb;
+  background: #3049a3;
+}
+.principal .principal-button:active {
+  border: 2px solid #4b63bb;
+  background: #3049a3;
+  box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.secondary {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  width: 100%;
+}
+.secondary .second-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 2rem 3rem;
+}
+.secondary .second-banner h2 {
+  margin-top: 1rem;
+}
+@media (max-width: 750px) {
+  .secondary .second-banner {
+    margin: 0.5rem 1rem;
+  }
+}
+.secondary .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+.secondary .cards .card {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 2rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #2bb3f3;
+  border-radius: 1rem;
+  color: white;
+}
+.secondary .cards .card h3 {
+  color: rgb(26, 25, 25);
+  border-radius: 2rem;
+  width: 4rem;
+  font-size: 3rem;
+  margin: 2rem auto;
+  padding-bottom: 0;
+  background-color: white;
+}
+.secondary .cards .card h4 {
+  font-family: "Edu TAS Beginner", cursive;
+  margin: auto 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.secondary .cards .card p {
+  text-align: justify;
+  margin: auto 1rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+  .secondary .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 750px) {
+  .secondary .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.5fr;
+  width: 100%;
+  background-color: rgb(26, 25, 25);
+  color: white;
+}
+footer .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+}
+footer .hours h2 {
+  margin-top: 2rem;
+}
+@media (max-width: 1200px) {
+  footer .hours {
+    text-align: center;
+  }
+}
+footer .find {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+}
+footer .find iframe {
+  width: 500px;
+  height: 300px;
+}
+@media (max-width: 1000px) {
+  footer .find {
+    width: 300px;
+    height: 300px;
+  }
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contact .number {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+footer .contact .socials {
+  list-style: none;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+footer .contact .socials a {
+  padding: 5px;
+  color: white;
+}
+footer .contact .socials .fb:hover {
+  color: #1877f2;
+}
+footer .contact .socials .ig:hover {
+  color: #e1306c;
+}
+footer .contact .socials .tt:hover {
+  color: #00d2f3;
+}
+footer .contact .socials .pint:hover {
+  color: #e60023;
+}
+footer .contact input[type=text] {
+  height: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: auto 1rem;
+}
+footer .contact input[type=text]::-moz-placeholder {
+  text-align: center;
+  font-size: 1rem;
+}
+footer .contact input[type=text]:-ms-input-placeholder {
+  text-align: center;
+  font-size: 1rem;
+}
+footer .contact input[type=text]::placeholder {
+  text-align: center;
+  font-size: 1rem;
+}
+footer .contact input[type=button] {
+  background: #4b63bb;
+  height: 3rem;
+  width: 9rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.3rem;
+}
+@media (max-width: 750px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}/*# sourceMappingURL=main.css.map */

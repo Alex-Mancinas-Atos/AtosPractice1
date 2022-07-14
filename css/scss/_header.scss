@@ -1,0 +1,89 @@
+@import "variables";
+
+
+
+header {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  background-color: $bg-nav;
+  .logo {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    color: $ligth;
+  }
+  .big-nav {
+    display: flex;
+    margin: auto;
+    ul {
+      font-size: 1.1em;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    
+      a {
+        margin: auto 2rem;
+        text-decoration: none;
+        color: $ligth;
+        
+        &:hover{
+            text-decoration: underline;
+
+        }
+        @media (max-width:1000px) {
+          margin: auto 0.5rem;
+        }
+        @media (max-width:750px) {
+          margin-top: 3rem;
+        }
+      }
+      @media (max-width:750px) {
+        flex-direction: column;
+        
+      }
+    }
+  
+  }
+  
+    .button-login {
+      display: flex;
+      margin: auto 0.5rem;
+      text-decoration: none;
+      color: $ligth;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto;
+      height: 2rem;
+      width: 10rem;
+      background-color: $buttons-bg;
+      border-radius: 1rem;
+      
+      &:hover{
+        border: 2px solid $buttons-bg;
+        background: $buttons-bg-active;
+     
+      }
+      &:active{
+        border: 2px solid $buttons-bg;
+        background: $buttons-bg-active;
+        box-shadow: -5px 22px 51px -3px rgba(0,0,0,0.5) inset;
+        -webkit-box-shadow: -5px 22px 51px -3px rgba(0,0,0,0.5) inset;
+        -moz-box-shadow: -5px 22px 51px -3px rgba(0,0,0,0.5) inset;
+      }
+      @media (max-width:1000px) {
+        width: 9rem;
+        
+      }
+    }
+  
+
+  @media (max-width:1022px) {
+    grid-template-columns: 1fr 3fr 1fr;
+    
+  }
+  @media (max-width:750px) {
+    grid-template-columns: 1fr;
+    height: 40vh;
+  }
+}

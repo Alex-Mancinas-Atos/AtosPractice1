@@ -1,0 +1,55 @@
+@import "variables";
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background: linear-gradient(rgba($bg-nav, 1.2), rgba($bg-nav, 0.3)),
+    url("../../img/Bg-image.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  padding-left: 5rem;
+
+  h1 {
+    font-family: "Edu TAS Beginner", cursive;
+    margin-top: 5rem;
+    color: lighten($ligth, 10%);
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  p {
+    font-family: "Edu TAS Beginner", cursive;
+    margin-bottom: 5rem;
+    color: lighten($ligth, 20%);
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .principal-button {
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    color: $ligth;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    height: 2em;
+    width: 15rem;
+    background-color: $buttons-bg;
+    border-radius: 3rem;
+    font-size: 2rem;
+    &:hover {
+      border: 2px solid $buttons-bg;
+      background: $buttons-bg-active;
+    }
+    &:active {
+      border: 2px solid $buttons-bg;
+      background: $buttons-bg-active;
+      box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+      -webkit-box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+      -moz-box-shadow: -5px 22px 51px -3px rgba(0, 0, 0, 0.5) inset;
+    }
+  }
+}
